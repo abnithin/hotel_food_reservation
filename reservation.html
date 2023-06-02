@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    ul{
+      list-style-type: none;
+      border: 1px solid greenyellow;
+      background-color: darkgreen;
+      overflow: hidden;
+      margin-bottom: 570px;
+      width: 129%;
+      margin-right: 800px;
+      
+    }
+     li {
+      float: left;
+    }
+   
+    li a{
+      display: block;
+      padding: 14px 16px;
+      color: white;
+      border: 1px outset greenyellow;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-decoration: none;
+
+
+
+    }
+    li a:hover{
+      border-radius: 30px;
+    }
+    body {
+      background-image: url("C:/Users/Hxtreme/Downloads/wtprojimg6.jpg");
+      background-repeat: repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center; /* Align content horizontally */
+      align-items: center; /* Align content vertically */
+      height: 100vh;
+     
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    form label {
+      margin-bottom: 15px; /* Increase the margin-bottom value */
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"],
+    form input[type="time"],
+    form select {
+      margin-bottom: 10px; /* Increase the margin-bottom value */
+    }
+
+    form input[type="submit"] {
+      margin-top: 15px; /* Increase the margin-top value */
+    }
+    .n1{
+      position: absolute;
+       left: 50%;
+       bottom: 10px;
+        border: 2px outset black;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    
+      <ul>
+        <li><a href="alphawtpro.html">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    
+  </div>
+  <div class="n1">
+  <section id="reservation" style="margin-left: 0px;">
+    <h1 style="font-size: 20px;">Make a Reservation</h1>
+    <form name="reservationForm" action="http://localhost:3000/register" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+      <label for="No of Peoples">No of Peoples:</label>
+      <input type="text" id="No of Peoples" name="No of Peoples" required>
+      <label for="menu">Menu:</label>
+      <select name="menu">
+        <option value="option1">select</option>
+        <option value="option2">Dosa</option>
+        <option value="option3">Briyani</option>
+        <option value="option3">Noodles</option>
+        <option value="option4">Chicken Rice</option>
+        <option value="option5">Chicken Rice</option>
+        <option value="option6">parotta</option>
+        <option value="option7">poori</option>
+        <option value="option8">chappathis</option>
+        <button type="button" onclick="printOutput()"></button>
+      </select>
+      <input type="submit" style="background-color: red; color: white;"value="Submit">
+      <div id="output"></div>
+    </form>
+  </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<style>
+  .center-text {
+    text-align: center;
+  }
+</style>
+
+<head>
+	<style>
+        ul{
+      list-style-type: none;
+      border: 1px solid greenyellow;
+      background-color: darkgreen;
+      overflow: hidden;
+      margin-bottom: 570px;
+      width: 129%;
+      margin-right: 800px;
+      
+    }
+     li {
+      float: left;
+    }
+   
+    li a{
+      display: block;
+      padding: 14px 16px;
+      color: white;
+      border: 1px outset greenyellow;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-decoration: none;
+
+
+
+    }
+    li a:hover{
+      border-radius: 30px;
+    }
+  		body {
+     	 	background-image: url("C:/Users/Hxtreme/Downloads/wtprojimg6.jpg");
+       position: relative;
+      	background-repeat: no-repeat;
+        	background-size: cover;
+     
+    }
+    .n2{
+      position: absolute;
+      top: 70%;
+    }
+  </style>
+  <title>Active Restaurant</title>
+  <link rel="stylesheet" type="text/css" href="C:/Users/Hxtreme/Documents/alphawtt.css">
+</head>
+<body>
+  <div>
+    
+    <ul>
+      <li><a href="alphawtpro.html">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+<div class="n2">
+  <section id="home">
+    <h1 class="center-text" <span style="background-color: rgb(31, 31, 15); color: #0fe897; width: 190%; font-family: 'Times New Roman', Times, serif;" >Welcome to Kra$$
+       Resturant</span> </h1>
+    <p class="center-text" style="color: #232839; text-align: center; left: 30%;position: relative;" >Enjoy delicious meals with excellent service.</p>
+  </section>
+
+  <table border="1" style="background-color: black;">
+<caption style="color:brown; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">FOOD MENU</caption>
+    <thead style="background-color: darkred;">
+      <tr>
+        <td>APPETIZERS</td>
+      
+      <td> MAIN COURSE</td>
+      <td>DESSERT</td>
+      </tr>
+    </thead>
+<tbody>
+  <tr>
+    <td>Bruschetta</td>
+    <td>Steak</td>
+    <td>Tiramisu</td>
+  </tr>
+  <tr>
+    <td>Caprese Salad</td>
+    <td>Pasta Carbonara</td>
+    <td>Chocolate Mousse</td>
+  </tr>
+  <tr>
+    <td>Garlic Shrimp</td>
+    <td>Grilled Salmon</td>
+    <td>Crème Brûlée</td>
+  </tr>
+</tbody>
+  </table>
+     
+<script>
+
+
+  function validateContactForm() {
+    var name = document.forms["contactForm"]["name"].value;
+    var email = document.forms["contactForm"]["email"].value;
+    var message = document.forms["contactForm"]["message"].value;
+
+    if (name === "" || email === "" || message === "") {
+      alert("Please fill in all fields of the contact form.");
+      return false;
+    }
+
+    // Additional validation logic if needed
+
+    return true;
+  }
+</script>
+
+<section id="reservation">
+  <h2 style="color: brown;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Make a Reservation</h2>
+  <form action="reservation.html">
+    <input type="submit" style="background-color: red; color: white; padding: 9px; " value="click here for reservation">
+      
+  </form>
+</section>
+
+<section id="contact">
+  <h2 style="color: brown;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Contact Us</h2>
+  <form name="contactForm" onsubmit="return validateContactForm()" action="#">
+      <label for="name" style="color: black;">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email" style="color: black;">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message" style="color: black;">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <input type="submit"  style="background-color: red; color: white; padding: 9px; " value="Send Message">
+      
+  </form>
+</section>
+
+  <footer>
+    <p style="color: black;">&copy; 2023 Active Restaurant. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  </div>
+</body>
+</html>
